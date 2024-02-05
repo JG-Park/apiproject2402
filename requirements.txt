@@ -20,3 +20,4 @@ jupyterlab
 requests
 beautifulsoup4
 selenium
+python-dotenv
