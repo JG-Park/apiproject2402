@@ -106,7 +106,8 @@ def recent_value(recent_data, GBN_options4, SGG_NM_options3, HOUSE_GBN_NM_option
                     & (recent_data['BJDONG_NM'].isin(BJDONG_NM_options2))
                     & (recent_data['평수'].between(AREA_values4[0], AREA_values4[1]))
                     & (recent_data['BLDG_NM'].isin(BLDG_NM_options))]
-    filtered_data4 = filtered_data4.loc[:, ['CNTRCT_DE', 'BLDG_NM', 'RENT_GTN', 'RENT_FEE']].reset_index(drop=True)
+    # 'SGG_NM'에 해당하는 데이터만 선택
+    filtered_data4 = filtered_data4.loc[:, ['SGG_NM', 'BJDONG_NM', 'CNTRCT_DE', 'BLDG_NM', 'RENT_GTN', 'RENT_FEE']].reset_index(drop=True)
     filtered_data4 = filtered_data4.rename(columns={'CNTRCT_DE': '날짜', 'BLDG_NM' : '건물명', 'RENT_GTN': '보증금', 'RENT_FEE': '임대료'})
     st.table(filtered_data4)
     
@@ -266,6 +267,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
