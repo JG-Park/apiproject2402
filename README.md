@@ -99,7 +99,7 @@ def send_email(name, email, inquiry_type, inquiry_details):
 
 # 발표자료 PDF
 - 발표자료 PDF는 아래와 같습니다.
-  + [내 집을 찾아서.pdf](내 집을 찾아서.pdf)
+  + [내 집을 찾아서.pdf](portfolio.pdf)
 
 # License
 `This project is licensed under the terms of the MIT license.`
