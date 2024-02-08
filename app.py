@@ -7,14 +7,12 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from streamlit_option_menu import option_menu
 
-# SEOUL_PUBLIC_API = st.secrets["SEOUL_PUBLIC_API"]
-# MAIL_KEY = st.secrets["MAIL_KEY"]
-SEOUL_PUBLIC_API = "####"
-MAIL_KEY = "####"
+SEOUL_PUBLIC_API = st.secrets["api_credentials"]["SEOUL_PUBLIC_API"]
+MAIL_KEY = st.secrets["api_credentials"]["MAIL_KEY"]
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('./test_data/data.csv')
+    df = pd.read_csv('./data/data.csv')
     data = df.loc[:, ['SGG_NM',  # 자치구명
     'BJDONG_NM',  # 법정동명
     'CNTRCT_DE',  # 계약일
@@ -67,7 +65,7 @@ def main_page():
 
     st.subheader("프로젝트 개요")
     st.markdown("멀티캠퍼스 멀티잇 데이터 분석 & 엔지니어 34회차")
-    st.markdown("Team 1 Mini-Project : '내 집을 찾아서'  [GitHub](https://github.com/JG-Park/findmyhouse)")
+    st.markdown("Team 1 Mini-Project : '내 집을 찾아서'  [GitHub](https://github.com/JinaaK/apiproject2402)")
 
 # 자치구별 시세 페이지
 def sgg_page(recent_data):
