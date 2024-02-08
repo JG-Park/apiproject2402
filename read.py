@@ -3,12 +3,11 @@ import requests
 import json
 import pandas as pd
 from dotenv import load_dotenv
+import streamlit as st
 import os
 
 load_dotenv()
 SEORUL_SERVICE_KEY = os.getenv('SEORUL_SERVICE_KEY')
-
-# print(SEORUL_SERVICE_KEY)
 
 # API 크롤링
 def fetch_data(start, end):
@@ -17,6 +16,7 @@ def fetch_data(start, end):
     content = req.json()
     # 데이터 추출 및 DataFrame으로 변환
     return pd.DataFrame(content['tbLnOpendataRentV']['row'])
+
 
 # 데이터 수집
 

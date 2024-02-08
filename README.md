@@ -8,12 +8,12 @@
 
  ## 팀원 소개 🧑‍🤝‍🧑
 - 박지건  : 깃허브 주소 공유
-- 정주영  : 깃허브 주소 공유
-- 김진아  : 깃허브 주소 공유 
+- 정주영  : [text](https://github.com/Ju0s)
+- 김진아  : [text](https://github.com/JinaaK) 
 - 원주성  : 깃허브 주소 공유 
-- 곽정근  : 깃허브 주소 공유 
+- 곽정근  : [text](https://github.com/alpha8108) 
   
-## 1. 본 프로젝트에서 사용한 주요 개발환경 ![파이썬](https://img.shields.io/badge/-Python-007396?style=flat&logo=Java&logoColor=ffffff) ![Streamlit](https://img.shields.io/badge/-Streamlit-3178C6?style=flat-square&logo=Streamlit&logoColor=red)
+## 1. 본 프로젝트에서 사용한 주요 개발환경
   - OS : Windows 10 & Mac (Linux에서는 테스트 하지 않았습니다.)
   - Programming Languages : Python(ver. 3.12.1)
   - Web Framework : Streamlit (ver. 1.31.0)
@@ -24,38 +24,25 @@
 
 # 데모페이지
 - Streamlit에서 구현한 Demo는 다음과 같습니다.
-  + https://prj-seoulrealestate-jgp.streamlit.app/ (일단 지건님 페이지 넣어놓은것) 
+  + [text](https://apiproject2402.streamlit.app/)
  
 
- # 주요 기능(수정해야함)
+ # 주요 기능
  - 본 프로젝트에서 자체 개발 및 활용한 주요 메서드는 다음과 같습니다. 
 
 | Functions | Location | Description |
-|---|---|---|
 | main | app.py  | for deploy |
-| load_api | data_collect.py | for collecting data from API |
+| load_api | read.py | for collecting data from API |
 
-### main()
-- main 함수는 ~~~
-```python
-def main():
-   # 코드 설명
-```
-- 결과 이미지가 있으면 표시 
 
-### data_collect()
--  data_collect() 함수는 ~~~~
-
-# 발표자료 PDF (수정해야함) 
+# 발표자료 PDF
 - 발표자료 PDF는 아래와 같습니다.
   + [00발표자료_2024](portfolio.pdf)
 
 
-# Release Notes (수정해야함) 
+# Release Notes
 - 개발 릴리스 노트는 `Releases` 클릭하여 확인하여 주시기를 바랍니다.
-  + 참조 : https://github.com/dschloe/streamlit-api/releases
-  + 작성방법 : https://docs.github.com/ko/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 
-# License (수정해야함) 
+# License
 - 라이선스 링크 아웃링크로 처리
 - [MIT Licence](LICENSE) 
