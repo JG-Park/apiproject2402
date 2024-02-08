@@ -10,7 +10,6 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-SEOUL_PUBLIC_API = st.secrets["api_credentials"]["SEOUL_PUBLIC_API"]
 MAIL_KEY = st.secrets["api_credentials"]["MAIL_KEY"]
 
 @st.cache_data
