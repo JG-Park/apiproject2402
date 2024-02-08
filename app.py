@@ -329,6 +329,19 @@ def yearly_page(recent_data):
 
 
 def main():
+
+    st.set_page_config(
+    page_title="내 집을 찾아서",
+    page_icon="🏠",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    # menu_items={
+    #     'Get Help': 'https://www.extremelycoolapp.com/help',
+    #     'Report a bug': "https://www.extremelycoolapp.com/bug",
+    #     'About': "# This is a header. This is an *extremely* cool app!"
+    # }
+)
+
     # 데이터 불러오기
     data = load_data()
 
@@ -356,7 +369,7 @@ def main():
                                  styles={"container": {"background-color": "#FC6736"}, "nav-link-selected": {"background-color": "#EEEEEE", "color": "#262730"}})
 
         elif selected_menu == "집 값 파악하기":
-            choice = option_menu("집 값 파악하기", ["최근 1개월 계약 현황", "2"],
+            choice = option_menu("집 값 파악하기", ["최근 1개월 계약 현황", "2023년 실거래가 추이"],
                                  icons=['bi bi-1-circle','bi bi-2-circle'], menu_icon='bi bi-graph-up-arrow',
                                  styles={"container": {"background-color": "#FC6736"}, "nav-link-selected": {"background-color": "#EEEEEE", "color": "#262730"}})
 
@@ -378,6 +391,9 @@ def main():
     
     if choice == "최근 1개월 계약 현황":
         onemonth_page(recent_data)
+
+    if choice == "2023년 실거래가 추이":
+        yearly_page(recent_data)
     
     if choice == "지원 및 문의":
         support_page()
